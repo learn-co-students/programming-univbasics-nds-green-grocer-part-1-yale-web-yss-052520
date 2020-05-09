@@ -2,9 +2,7 @@ require "pry"
 
 def find_item_by_name_in_collection(name, collection)
   for item in collection do
-    if item[:item] == name
-      return item
-    end 
+    return item if item[:item] == name
   end 
   nil
 end
